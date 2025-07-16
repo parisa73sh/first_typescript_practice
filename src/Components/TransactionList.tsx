@@ -8,7 +8,6 @@ const TransactionList = () => {
     dispatch(deleteTransaction(id));
   };
   return (
-    <div className="min-h-screen bg-gradient-to-br from-[#0f0c29] via-[#302b63] to-[#24243e] text-white font-sans p-4">
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
       {transactions.length === 0 && (
         <div className="col-span-full text-center text-gray-400">تراکنشی وجود ندارد.</div>
@@ -33,7 +32,6 @@ const TransactionList = () => {
           </div>
         )
       ))}
-    </div>
     </div>
   );
 };
